@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DataType Tabular Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+</head>
+<body>
+<div class="matContainer">
+    <div class="card">
+        <div class="card-header text-center card-headerMine text-white">
+            <h5 class="card-title"><b>DataType</b></h5>
+        </div>
+        <div class="card-body bg-light" style="height: 545px;">
+            <div class="table3 bg-white popupCard card">
+                <table class="table table-bordered ">
+                    <thead class="bg-light">
+                    <tr>
+                        <td class="text-center key" style="min-width: 150px;">Key</td>
+                        <td class="text-center" style="min-width: 250px;" colspan="2">Value</td>
+                        <td class="text-center">Description</td>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td><span class="badge badge-required">Req</span> $type</td>
+                        <td class="text-center" colspan="2">
+                            "DataType"
+                        </td>
+                        <td class="text-justify">Type of this object.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-required">Req</span> $dataType</td>
+                        <td colspan="2" class="text-center"><h5><span class="badge badge-string">string</span></h5></td>
+                        <td class="text-justify">DataType that is referenced.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-optional">Opt</span> defaultValue</td>
+                        <td class="text-center" colspan="2"><h5><span class="badge badge-string">string</span><br>
+                            <span class="badge badge-boolean">boolean</span><br>
+                            <span class="badge badge-number">number</span><br>
+                        </h5></td>
+                        <td class="text-justify">Default value for the DataType. Must match the DataType stated in $dataType.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-optional">Opt</span> rules</td>
+                        <td class="text-center"><h5><span class="badge badge-array">Array</span></h5></td>
+                        <td class="text-center"><h5><span class="badge badge-nonTerminal">TextRule</span><br>
+                            <span class="badge badge-nonTerminal">BooleanRule</span><br>
+                            <span class="badge badge-nonTerminal">NumberRule</span><br>
+                            <span class="badge badge-nonTerminal">DateRule</span><br>
+                            <span class="badge badge-nonTerminal">TimeRule</span><br>
+                            <span class="badge badge-nonTerminal">DateTimeRule</span><br>
+                            <span class="badge badge-nonTerminal">LogicalRule</span></h5>
+                        </td>
+                        <td class="text-justify">Semantic rules for this DataType. Can contain only Rules for the DataType stated in $dataType.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-optional">Opt</span> name</td>
+                        <td class="text-center" colspan="2"><h5><span class="badge badge-string">string</span></h5></td>
+                        <td class="text-justify">Name of this DataType.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-optional">Opt</span> description</td>
+                        <td class="text-center" colspan="2"><h5><span class="badge badge-string">string</span></h5></td>
+                        <td class="text-justify">Description about this DataType.</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+<script>$(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+});</script>
+</body>
+</html>

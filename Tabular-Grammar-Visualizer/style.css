@@ -1,0 +1,66 @@
+.popupCard {
+    position: relative;
+    top: -87px;
+    min-height: 100px;
+}
+
+.matContainer {
+    width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
+.card-headerMine {
+    height: 120px !important;
+    background-color: #1976d2 !important;
+}
+
+thead {
+    font-weight: bold;
+}
+
+.badge-required {
+    color: #fff;
+    background-color: #4caf50;
+    margin-right: 5px;
+}
+
+.badge-optional {
+    color: #fff;
+    background-color: #deaf2b;
+    margin-right: 5px;
+}
+
+.badge-nonTerminal {
+    background-color: #1976d2 !important;
+    color: #fff;
+}
+
+.badge-array {
+    background-color: #d21919 !important;
+    color: #fff;
+}
+
+.badge-string {
+    background-color: green !important;
+    color: #fff;
+}
+
+.badge-boolean {
+    background-color: #ff8c00 !important;
+    color: #fff;
+}
+
+.badge-number {
+    background-color: #ee422e !important;
+    color: #fff;
+}
+
+.badge-object {
+    background-color: #8e26d0 !important;
+    color: #fff;
+}
+
+td {
+    vertical-align: middle !important;
+}
